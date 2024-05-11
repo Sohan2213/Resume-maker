@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOHAN MOHANTY - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            background: linear-gradient(45deg, #00bcd4, #03a9f4, #2196f3, #3f51b5, #673ab7, #9c27b0, #e91e63, #ff5722);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        .resume {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1px;
+        }
+
+        .header {
+            background-color: lightblue;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            grid-column: span 2;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .section {
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+            color: #333;
+            border-top: 1px solid #ddd;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume">
+        <div class="header">
+            <h1>SOHAN MOHANTY</h1>
+            <p>Email: sohan2213.mnty@gmail.com | Phone: 9937095804 | LinkedIn: Sohan4573</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p>Job Title | Company Name | Date Range</p>
+            <p>I am an aspiring solution architect!</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>Degree Earned | University Name | Graduation Year</p>
+            <p>Description of your academic achievements and coursework.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>Technical Skills: Skill 1, Skill 2, Skill 3</p>
+            <p>Soft Skills: Communication, Teamwork, Problem-solving</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <p>Project Name | Date Range</p>
+            <p>Description of the project, your role, and the technologies used.</p>
+        </div>
+
+        <div class="footer">
+            <p>www.prof-flow.com pvt.Ltd.</p>
+        </div>
+    </div>
+
+</body>
+</html>

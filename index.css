@@ -1,0 +1,199 @@
+/* CSS (styles.css) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #00bcd4, #03a9f4, #2196f3, #3f51b5, #673ab7, #9c27b0, #e91e63, #ff5722);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-container, #resumeOptions, #resumeForm, #loading, #output {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+h1, h2, p {
+    color: #333;
+    animation: fadeIn 2s; 
+}
+
+.lets-go-button,button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.fadeInLeft{
+    animation: fadeInLeft 3s ease-in;
+}
+
+.fadeInRight{
+    animation: fadeInRight 3s ease-in;
+}
+
+.fadeIn{
+    animation: fadeIn 3s ease-in; 
+}
+
+.lets-go-button:hover, button:hover {
+    background-color: #e64a19;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.loading-container p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+#technicalForm, #nonTechnicalForm {
+    background: #f0f0f0;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#technicalForm label, #nonTechnicalForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#technicalForm input, #nonTechnicalForm input, #nonTechnicalForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#technicalForm button, #nonTechnicalForm button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#technicalForm button:hover, #nonTechnicalForm button:hover {
+    background-color: #e64a19;
+}
+
+/* CSS (index.css) */
+.resume {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 4px;
+    animation: fadeInDown;
+}

@@ -1,0 +1,82 @@
+<!-- HTML (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Resume Maker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home-container">
+            <h1>Welcome to Pro-Flow</h1>
+            <button class="lets-go-button" onclick="playSoundAndShowOptions()">Let's Go!</button>
+        </div>
+
+        <div id="resumeOptions" class="hidden">
+            <h2>Choose your resume type:</h2>
+            <button onclick="showForm('technical')" class="fadeInLeft">Technical Interview</button>
+            <button onclick="showForm('nonTechnical')" class="fadeInRight">Non-Technical Interview</button>
+            <button onclick="goBack('home-container')" class="fadeIn">Go Back</button>
+        </div>
+
+        <div id="technicalForm" class="hidden">
+            <h2>Technical Interview Form</h2>
+            <form>
+                <label for="nameTech">Name:</label>
+                <input type="text" id="nameTech" placeholder="Enter your name">
+
+                <label for="emailTech">Email:</label>
+                <input type="email" id="emailTech" placeholder="Enter your email">
+
+                <label for="phoneTech">Phone:</label>
+                <input type="tel" id="phoneTech" placeholder="Enter your phone number">
+
+                <label for="linkedinTech">LinkedIn Username:</label>
+                <input type="text" id="linkedinTech" placeholder="Enter your LinkedIn username">
+
+                <label for="githubTech">GitHub Username:</label>
+                <input type="text" id="githubTech" placeholder="Enter your GitHub username">
+
+                <button onclick="generateResume('technical')">Generate Resume</button>
+                <button onclick="goBack('resumeOptions')">Go Back</button>
+            </form>
+        </div>
+
+        <div id="nonTechnicalForm" class="hidden">
+            <h2>Non-Technical Interview Form</h2>
+            <form>
+                <label for="nameNonTech">Name:</label>
+                <input type="text" id="nameNonTech" placeholder="Enter your name">
+
+                <label for="emailNonTech">Email:</label>
+                <input type="email" id="emailNonTech" placeholder="Enter your email">
+
+                <label for="phoneNonTech">Phone:</label>
+                <input type="tel" id="phoneNonTech" placeholder="Enter your phone number">
+
+                <label for="linkedinNonTech">LinkedIn Username:</label>
+                <input type="text" id="linkedinNonTech" placeholder="Enter your LinkedIn username">
+
+                <label for="coCurricular">Co-Curricular Activities:</label>
+                <textarea id="coCurricular" placeholder="Enter your co-curricular activities"></textarea>
+
+                <button onclick="generateResume('nonTechnical')">Generate Resume</button>
+                <button onclick="goBack('resumeOptions')">Go Back</button>
+            </form>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p class="fadeInDown">Loading...</p>
+        </div>
+
+        <div id="output" class="hidden">
+            <button onclick="goBack('resumeOptions')" class="fadeIn">Go Back</button>
+        </div>
+    </div>
+    
+    <audio id="clickSound" src="mixkit-sci-fi-click-900.wav"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
